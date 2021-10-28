@@ -1,10 +1,10 @@
 {
-    "title": "Monkey Groove",
-    "id": "Monkey Groove",
-    "description": "Monkey Groove sample skin.",
+    "title": "Monkey Groove dark",
+    "id": "Monkey Groove dark",
+    "description": "Monkey Groove dark skin. Derived from 'Monkey Groove sample skin'",
     "version": "1.0.0",
     "type": "skin",
-    "author": "Ventis Media, Inc.",
+    "author": "Marcel Huber",
     "config": "config.js",
     "icon": "thumb.png"
 }

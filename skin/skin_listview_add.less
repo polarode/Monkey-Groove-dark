@@ -1,7 +1,7 @@
 .itemNowPlaying, .itemNowPlaying label {
     font-weight: bold;
-    color: lighten(@accentColor, 15%) !important; // #15893
-    fill: lighten(@accentColor, 5%) !important; // #15893
+    color: lighten(@accentColor, 25%) !important; // #15893
+    fill: lighten(@accentColor, 15%) !important; // #15893
 }
 
 /* Alternate colors for tracklists */
@@ -53,8 +53,8 @@
 
 /* Main tree has slightly different selection - less prominent */
 [data-control-class=MediaTree] .lvItem[data-selected] {
-    color: @highlightColor;
-    fill: @highlightColor;
+    color: lighten(@highlightColor, 15%);
+    fill: lighten(@highlightColor, 15%);
     background-color: inherit;
 
     &[data-hover] {

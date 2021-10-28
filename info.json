@@ -1,0 +1,10 @@
+{
+    "title": "Monkey Groove",
+    "id": "Monkey Groove",
+    "description": "Monkey Groove sample skin.",
+    "version": "1.0.0",
+    "type": "skin",
+    "author": "Ventis Media, Inc.",
+    "config": "config.js",
+    "icon": "thumb.png"
+}

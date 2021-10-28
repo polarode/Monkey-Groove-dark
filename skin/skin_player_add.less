@@ -1,0 +1,96 @@
+[data-id='player-volumebar'] {    
+    height: @units0_8;
+    width: @units4_0;
+}
+
+.playerSmallButton {
+    width: @units2_0;
+    height: @units2_0;
+    padding: @units0_5;
+}
+
+.playerMediumButton {
+    width: @units2_5;
+    height: @units2_5;
+    padding: @units0_5;
+}
+
+.playerBigButton {
+    width: @units3_5;
+    height: @units3_5;
+    padding: @units0_2;
+}
+
+[data-id='td_player-ltime'] {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+[data-id='player-vis'] {
+    position: relative;
+    opacity: 1;
+    height: @units2_0;
+}
+
+[data-id='player'], [data-id='player'] .ratingStar {
+	background-color: @highlightColor;
+	color: @invertedColor;
+	fill: @invertedColor;
+}
+
+[data-id='player'] .ratingCanvas[data-unknown] .ratingStar[data-emptystar] svg path:nth-child(1) {
+    stroke: @invertedColor;
+}
+
+[data-id='player'] {
+    & .seekBar {
+        background-color: @invertedSecondaryColor;
+    }
+
+    & .seekBarBefore {
+        background-color: @invertedColor;
+    }
+
+    & .seekBarThumb {
+        border: @thumbBorderSize solid @invertedColor;
+    }
+    
+    & .ratingCanvas[data-hover] .ratingStar {
+        fill: @invertedSecondaryColor;
+    }
+
+    & .ticksOuter .tick {
+        background-color: @invertedSecondaryColor;
+    }
+    
+    & .progressBar .label {
+        color: @invertedColor;
+    }
+    
+    & .waveform {
+        & .seekBarThumb {
+            background-color: @invertedSecondaryColor;
+        };
+        
+        & .seekBarBefore {
+            background-color: @invertedSecondaryColor;
+        }
+    }
+}
+
+[data-id='player'] .seekBarThumb:hover:not([data-disabled]), [data-id='player'] .seekBarThumb:active:not([data-disabled]), [data-id='player'] .seekBarThumbVert:hover:not([data-disabled]), [data-id='player'] .seekBarThumbVert:active:not([data-disabled]) {
+    border: @thumbBorderSize solid @invertedSecondaryColor;
+}
+
+
+.playerButton {
+    &:hover:not([data-disabled]), &:hover:not([data-disabled]) label, &:hover .ratingStar {
+        color: @invertedSecondaryColor;
+        fill: @invertedSecondaryColor;
+        background-color: inherit;
+    }
+}
+
+.videoContainer {
+    border: 4px solid black;
+}

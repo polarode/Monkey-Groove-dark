@@ -1,0 +1,73 @@
+@baseColor: #ffffff;
+@secondaryColor: #f2f2f2;
+@tertiaryColor: #e6e6e6;
+@warningColor: #346dcf;
+@warning2Color: saturate(darken(@warningColor, 7%), 5%);;
+@controlColor: rgba(0, 0, 0, 0.0);
+@hoverColor: @warningColor;
+@hoverBg2Color: #c4c4c4;
+@hoverBgColor: #cfcfcf;
+@contrastColor: #b9b9b9;
+@borderColor: @tertiaryColor;
+@selectedColor: @warningColor;
+@disabledSelectedColor: desaturate(mix(@baseColor, @selectedColor, 25%), 50%);
+@headerColor: @tertiaryColor;
+@highlightColor: @warningColor;
+@highlightBgColor: @highlightColor;
+@invertedColor: white;
+@invertedSecondaryColor: #b0b0b0;
+@titleBarTextColor: black;
+
+@windowBorderColor: #346dcf;
+
+@baseFontSize: 12px;
+@fontLineSize: @units1_2;
+
+@font-face { font-family: OpenSans; src: url("/skin/fonts/OpenSans-Regular.ttf"); }
+@font-face { font-family: OpenSans; src: url("/skin/fonts/OpenSans-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: OpenSans; src: url("/skin/fonts/OpenSans-Italic.ttf"); font-style: italic; }
+@font-face { font-family: OpenSans; src: url("/skin/fonts/OpenSans-BoldItalic.ttf"); font-weight: bold; font-style: italic;}
+
+// colors used for selection icons
+@selectedBgColor: @tertiaryColor;
+@selectedBgColorR: fade(@selectedBgColor, 85%); // for rows
+@selectedHoverColor: mix(@selectedBgColor, @hoverColor);
+
+body {
+    font-family: OpenSans, sans-serif;
+}
+
+.sidePanel {
+    background-color: @secondaryColor;
+}
+
+.verticalPanel {
+	.sidePanel;
+}
+
+.verticalPanel .transparentBackground {
+    background-color: fadeout(@secondaryColor, @transparentFadeout);
+}
+
+.verticalPanelNarrow {
+	.sidePanel;
+}
+
+[data-id=toolbuttons] {
+    background-color: @tertiaryColor;
+}
+
+[data-control-class=MainTabs] {
+    //background-color: @highlightColor;
+	//color: @invertedColor;
+	//fill: @invertedColor;
+}
+
+[data-control-class=MainTabs] .tabsHeader[data-selected] {
+    background-color: @highlightColor;
+    color: @invertedColor;
+	fill: @invertedColor;
+    border-bottom: none;
+    font-weight: bold;
+//    border-bottom: 1px solid@highlightColor;
+}
